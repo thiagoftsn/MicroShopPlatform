@@ -25,6 +25,113 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "GET Product by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{catalog_url}}/product/0194082e-f650-44bd-a20a-6c345e05a2cd",
+							"host": [
+								"{{catalog_url}}"
+							],
+							"path": [
+								"product",
+								"0194082e-f650-44bd-a20a-6c345e05a2cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Product by Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{catalog_url}}/products/category/a1",
+							"host": [
+								"{{catalog_url}}"
+							],
+							"path": [
+								"products",
+								"category",
+								"a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\r\n            \"id\": \"019408e3-a0b0-4551-a44a-8224fe6035e7\",\r\n            \"name\": \"test2\",\r\n            \"category\": [\r\n                \"a1\",\r\n                \"a2\"\r\n            ],\r\n            \"description\": \"Test\",\r\n            \"imageFile\": \"test\",\r\n            \"price\": 201\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{catalog_url}}/products",
+							"host": [
+								"{{catalog_url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{catalog_url}}/products/0194082e-f650-44bd-a20a-6c345e05a2cd",
+							"host": [
+								"{{catalog_url}}"
+							],
+							"path": [
+								"products",
+								"0194082e-f650-44bd-a20a-6c345e05a2cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"0194082e-f650-44bd-a20a-6c345e05a2cd\",\r\n    \"name\": \"test2\",\r\n    \"category\": [\r\n        \"a1\",\r\n        \"a2\"\r\n    ],\r\n    \"description\": \"Test\",\r\n    \"imageFile\": \"test\",\r\n    \"price\": 199\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{catalog_url}}/products",
+							"host": [
+								"{{catalog_url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
